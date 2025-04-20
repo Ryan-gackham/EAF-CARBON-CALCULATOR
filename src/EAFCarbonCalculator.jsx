@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "../components/ui/card";
+import { Input } from "../components/ui/input";
+import { Label } from "../components/ui/label";
+import { Button } from "../components/ui/button";
 
 const emissionFactors = {
   "天然气": { unit: "万Nm³", factor: 21.65 },
@@ -36,8 +36,8 @@ export default function EAFCarbonCalculator() {
     return total + amount * factor;
   }, 0);
 
-  const steelOutput = inputs["废钢"] || 1;
-  const emissionIntensity = totalEmissions / (steelOutput * 10000);
+  const steelOutput = inputs["废钢"] || 1; // 万吨，避免除以0
+  const emissionIntensity = totalEmissions / (steelOutput * 10000); // 吨CO2/吨钢
 
   return (
     <div className="p-4 max-w-2xl mx-auto">
