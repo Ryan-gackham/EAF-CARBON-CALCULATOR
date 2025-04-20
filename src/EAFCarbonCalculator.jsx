@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { Card, CardContent } from "../components/ui/card";
-import { Input } from "../components/ui/input";
-import { Label } from "../components/ui/label";
-import { Button } from "../components/ui/button";
++ import { Card, CardContent } from "./components/ui/card";
++ import { Input } from "./components/ui/input";
++ import { Label } from "./components/ui/label";
++ import { Button } from "./components/ui/button";
 
 const emissionFactors = {
   "天然气": { unit: "万Nm³", factor: 21.65 },
