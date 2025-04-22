@@ -5,16 +5,15 @@ import { Button } from "./components/ui/button";
 
 const emissionFactors = {
   "天然气": { unit: "万Nm³", factor: 21.65 },
-  "废钢": { unit: "万吨", factor: 0.015 },
-  "石灰": { unit: "万吨", factor: 1.024 },
-  "轻烧白云石": { unit: "万吨", factor: 1.024 },
-  "电极": { unit: "万吨", factor: 3.663 },
-  "增碳剂、碳粉": { unit: "万吨", factor: 3.667 },
-  "铬铁合金": { unit: "万吨", factor: 0.275 },
-  "电力": { unit: "万kWh", factor: 0.5568 },
+  "废钢": { unit: "吨", factor: 0.015 },
+  "石灰": { unit: "吨", factor: 1.024 },
+  "轻烧白云石": { unit: "吨", factor: 1.024 },
+  "电极": { unit: "吨", factor: 3.663 },
+  "增碳剂、碳粉": { unit: "吨", factor: 3.667 },
+    "电力": { unit: "万kWh", factor: 5.568 },
   "蒸汽（净使用）": { unit: "万吨", factor: 0.1100 },
-  "铁水、生铁": { unit: "万吨", factor: 1.739 },
-  "钢坯": { unit: "万吨", factor: 0.0154 }
+  "铁水、生铁": { unit: "吨", factor: 1.739 },
+  "钢坯": { unit: "吨", factor: 0.0154 }
 };
 
 export default function EAFCarbonCalculator() {
